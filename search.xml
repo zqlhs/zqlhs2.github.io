@@ -6,6 +6,31 @@
     <content type="text"><![CDATA[关于编程，从最早接触的C++讲起。]]></content>
   </entry>
   <entry>
+    <title><![CDATA[MySQL的表以及数据备份]]></title>
+    <url>%2F2017%2F05%2F26%2FMySQL%E7%9A%84%E8%A1%A8%E5%A2%9E%E5%88%A0%E5%AD%97%E6%AE%B5%E5%92%8C%E5%A2%9E%E5%88%A0%E7%B4%A2%E5%BC%95%2F</url>
+    <content type="text"><![CDATA[表添加字段： ALTER TABLE 表名 ADD COLUMN 表字段 varchar(50) DEFAULT NULL COMMENT &apos;字段描述&apos;; 表删除字段： ALTER TABLE 表名 DROP COLUMN 表字段 ; 字段建唯一索引：create index idx_province_id on 表名 (表字段 ); 上为索引 create index 字段的索引 on 表名 (表字段 ); 删除字段的索引：alter table 表名 drop index idx_province_id ; 上为索引 alter table 表名 drop 字段的索引 ;]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>增删字段</tag>
+        <tag>增删索引</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MySQL的表以及数据备份]]></title>
+    <url>%2F2017%2F05%2F26%2FMySQL%E7%9A%84%E8%A1%A8%E4%BB%A5%E5%8F%8A%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD%2F</url>
+    <content type="text"><![CDATA[备份表方法： 此方法索引和increment值也会同步 CREATE TABLE tb_cab_bak LIKE tb_cab; // 同步建表 INSERT INTO tb_cab_bak SELECT * FROM tb_cab；// 同步数据 若只复制表中的部分内容的同时定义表中的字段信息： CREATE TABLE tb_cab_bak ( – 对copy的表中的ID进行主键约束 ID INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY ) AS ( SELECT ID,SNAME,SCORE FROM tb_cab_bak );]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>数据备份</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[自学编程成功概率有多少可能]]></title>
     <url>%2F2017%2F05%2F26%2F%E5%85%B3%E4%BA%8E%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>

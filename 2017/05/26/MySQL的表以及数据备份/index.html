@@ -103,7 +103,7 @@
 
 
 
-  <meta name="keywords" content="奔跑, 刘虎森, 博客, 编程, JAVA, java">
+  <meta name="keywords" content="MySQL,数据备份,">
 
 
 
@@ -116,17 +116,18 @@
 
 
 
-<meta name="description" content="这是新的开始">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="https://liuhusen.com/tags/index.html">
+<meta name="description" content="备份表方法：  此方法索引和increment值也会同步 CREATE TABLE tb_cab_bak LIKE tb_cab; // 同步建表  INSERT INTO tb_cab_bak SELECT * FROM tb_cab；// 同步数据    若只复制表中的部分内容的同时定义表中的字段信息：                 CREATE TABLE tb_cab_bak">
+<meta name="keywords" content="MySQL,数据备份">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL的表以及数据备份">
+<meta property="og:url" content="https://liuhusen.com/2017/05/26/MySQL的表以及数据备份/index.html">
 <meta property="og:site_name" content="藏书阁">
-<meta property="og:description" content="这是新的开始">
+<meta property="og:description" content="备份表方法：  此方法索引和increment值也会同步 CREATE TABLE tb_cab_bak LIKE tb_cab; // 同步建表  INSERT INTO tb_cab_bak SELECT * FROM tb_cab；// 同步数据    若只复制表中的部分内容的同时定义表中的字段信息：                 CREATE TABLE tb_cab_bak">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-25T02:23:29.622Z">
+<meta property="og:updated_time" content="2018-10-25T18:03:45.999Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="这是新的开始">
+<meta name="twitter:title" content="MySQL的表以及数据备份">
+<meta name="twitter:description" content="备份表方法：  此方法索引和increment值也会同步 CREATE TABLE tb_cab_bak LIKE tb_cab; // 同步建表  INSERT INTO tb_cab_bak SELECT * FROM tb_cab；// 同步数据    若只复制表中的部分内容的同时定义表中的字段信息：                 CREATE TABLE tb_cab_bak">
 
 
 
@@ -156,13 +157,13 @@
 
 
 
-  <link rel="canonical" href="https://liuhusen.com/tags/">
+  <link rel="canonical" href="https://liuhusen.com/2017/05/26/MySQL的表以及数据备份/">
 
 
 
 
 
-  <title>标签 | 藏书阁</title>
+  <title>MySQL的表以及数据备份 | 藏书阁</title>
   
 
 
@@ -359,40 +360,243 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liuhusen.com/2017/05/26/MySQL的表以及数据备份/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/person3.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="藏书阁">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">标签</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 6 个标签
+          <h1 class="post-title" itemprop="name headline">MySQL的表以及数据备份</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">创建日期：</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-26T19:57:47+08:00">
+                2017-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+             归类：
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+         
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                   <i class="fa fa-file-word-o"></i>
+                </span>
+                文章字数：
+                <span title="字数统计">
+                  88 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                阅读时间
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
             </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/MySQL/" style="font-size: 30px; color: #111">MySQL</a> <a href="/tags/增删字段/" style="font-size: 12px; color: #ccc">增删字段</a> <a href="/tags/增删索引/" style="font-size: 12px; color: #ccc">增删索引</a> <a href="/tags/感悟/" style="font-size: 12px; color: #ccc">感悟</a> <a href="/tags/数据备份/" style="font-size: 12px; color: #ccc">数据备份</a> <a href="/tags/编程/" style="font-size: 12px; color: #ccc">编程</a>
-            </div>
-          </div>
-        
-      </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>   备份表方法：  此方法索引和increment值也会同步</p>
+<pre><code>CREATE TABLE tb_cab_bak LIKE tb_cab; // 同步建表
+
+INSERT INTO tb_cab_bak SELECT * FROM tb_cab；// 同步数据
+</code></pre><p>   若只复制表中的部分内容的同时定义表中的字段信息：<br>                 CREATE TABLE tb_cab_bak<br>                  (<br>                  – 对copy的表中的ID进行主键约束<br>                 ID INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY<br>                   )<br>                 AS<br>                 ( SELECT ID,SNAME,SCORE FROM tb_cab_bak );</p>
+
       
     </div>
     
     
     
+	<div>
+		  
+			
+		  
+	</div>
+    
+
+    
+
+    
+	<div>
+	  
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+	  
+	</div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          
+            <a href="/tags/数据备份/" rel="tag"># 数据备份</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/26/MySQL的表增删字段和增删索引/" rel="next" title="MySQL的表以及数据备份">
+                <i class="fa fa-chevron-left"></i> MySQL的表以及数据备份
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/22/hello-world/" rel="prev" title="关于编程">
+                关于编程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
   </div>
 
 

@@ -39,6 +39,67 @@
   </entry>
   
   <entry>
+    <title>MySQL的表以及数据备份</title>
+    <link href="https://liuhusen.com/2017/05/26/MySQL%E7%9A%84%E8%A1%A8%E4%BB%A5%E5%8F%8A%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/"/>
+    <id>https://liuhusen.com/2017/05/26/MySQL的表以及数据备份/</id>
+    <published>2017-05-26T11:57:47.000Z</published>
+    <updated>2018-10-25T18:03:45.999Z</updated>
+    
+    <content type="html"><![CDATA[<p>   备份表方法：  此方法索引和increment值也会同步</p><pre><code>CREATE TABLE tb_cab_bak LIKE tb_cab; // 同步建表INSERT INTO tb_cab_bak SELECT * FROM tb_cab；// 同步数据</code></pre><p>   若只复制表中的部分内容的同时定义表中的字段信息：<br>                 CREATE TABLE tb_cab_bak<br>                  (<br>                  – 对copy的表中的ID进行主键约束<br>                 ID INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY<br>                   )<br>                 AS<br>                 ( SELECT ID,SNAME,SCORE FROM tb_cab_bak );</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;   备份表方法：  此方法索引和increment值也会同步&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CREATE TABLE tb_cab_bak LIKE tb_cab; // 同步建表
+
+INSERT INTO tb_cab_bak SELECT * FROM tb_cab；
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://liuhusen.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="MySQL" scheme="https://liuhusen.com/tags/MySQL/"/>
+    
+      <category term="数据备份" scheme="https://liuhusen.com/tags/%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL的表以及数据备份</title>
+    <link href="https://liuhusen.com/2017/05/26/MySQL%E7%9A%84%E8%A1%A8%E5%A2%9E%E5%88%A0%E5%AD%97%E6%AE%B5%E5%92%8C%E5%A2%9E%E5%88%A0%E7%B4%A2%E5%BC%95/"/>
+    <id>https://liuhusen.com/2017/05/26/MySQL的表增删字段和增删索引/</id>
+    <published>2017-05-26T11:57:47.000Z</published>
+    <updated>2018-10-25T18:19:23.631Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>表添加字段： ALTER TABLE 表名 ADD COLUMN 表字段 varchar(50) DEFAULT NULL COMMENT &apos;字段描述&apos;;表删除字段： ALTER TABLE 表名 DROP COLUMN  表字段 ;字段建唯一索引：create index idx_province_id on 表名 (表字段 );                               上为索引                create index 字段的索引 on 表名 (表字段 );               删除字段的索引：alter table 表名 drop index idx_province_id ;                                        上为索引                alter table 表名 drop 字段的索引 ;</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;pre&gt;&lt;code&gt;表添加字段： ALTER TABLE 表名 ADD COLUMN 表字段 varchar(50) DEFAULT NULL COMMENT &amp;apos;字段描述&amp;apos;;
+
+表删除字段： ALTER TABLE 表名 DROP COLUMN  表字段 ;
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://liuhusen.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="MySQL" scheme="https://liuhusen.com/tags/MySQL/"/>
+    
+      <category term="增删字段" scheme="https://liuhusen.com/tags/%E5%A2%9E%E5%88%A0%E5%AD%97%E6%AE%B5/"/>
+    
+      <category term="增删索引" scheme="https://liuhusen.com/tags/%E5%A2%9E%E5%88%A0%E7%B4%A2%E5%BC%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自学编程成功概率有多少可能</title>
     <link href="https://liuhusen.com/2017/05/26/%E5%85%B3%E4%BA%8E/"/>
     <id>https://liuhusen.com/2017/05/26/关于/</id>
