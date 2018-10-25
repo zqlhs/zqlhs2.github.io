@@ -6,7 +6,7 @@
     <content type="text"><![CDATA[关于编程，从最早接触的C++讲起。]]></content>
   </entry>
   <entry>
-    <title><![CDATA[MySQL的表以及数据备份]]></title>
+    <title><![CDATA[MySQL的表增删字段和增删索引]]></title>
     <url>%2F2017%2F05%2F26%2FMySQL%E7%9A%84%E8%A1%A8%E5%A2%9E%E5%88%A0%E5%AD%97%E6%AE%B5%E5%92%8C%E5%A2%9E%E5%88%A0%E7%B4%A2%E5%BC%95%2F</url>
     <content type="text"><![CDATA[表添加字段： ALTER TABLE 表名 ADD COLUMN 表字段 varchar(50) DEFAULT NULL COMMENT &apos;字段描述&apos;; 表删除字段： ALTER TABLE 表名 DROP COLUMN 表字段 ; 字段建唯一索引：create index idx_province_id on 表名 (表字段 ); 上为索引 create index 字段的索引 on 表名 (表字段 ); 删除字段的索引：alter table 表名 drop index idx_province_id ; 上为索引 alter table 表名 drop 字段的索引 ;]]></content>
       <categories>
