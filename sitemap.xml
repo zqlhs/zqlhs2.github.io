@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://liuhusen.com/2018/10/22/hello-world/</loc>
+    
+    <lastmod>2018-10-25T06:25:05.356Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liuhusen.com/2017/05/26/%E5%85%B3%E4%BA%8E/</loc>
+    
+    <lastmod>2018-10-25T06:24:46.244Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://liuhusen.com/tags/index.html</loc>
     
     <lastmod>2018-10-25T02:23:29.622Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://liuhusen.com/about/index.html</loc>
     
     <lastmod>2018-10-25T02:19:26.874Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuhusen.com/2017/05/26/%E5%85%B3%E4%BA%8E/</loc>
-    
-    <lastmod>2018-10-25T01:48:29.340Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>https://liuhusen.com/%E5%85%AC%E7%9B%8A/index.html</loc>
     
     <lastmod>2018-10-24T08:02:06.310Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://liuhusen.com/2018/10/22/hello-world/</loc>
-    
-    <lastmod>2018-10-22T11:18:20.402Z</lastmod>
     
   </url>
   
