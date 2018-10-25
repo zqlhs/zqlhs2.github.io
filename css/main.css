@@ -1979,7 +1979,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #21b058;
+  background: #f5bddb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2969,6 +2969,15 @@ h2.about-title {
 }
 .with-love {
   color: #ff71a8;
+}
+.aplayer {
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STHeiti, "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Droid Sans Fallback", "Microsoft YaHei", sans-serif !important;
+}
+.aplayer-withlrc.aplayer .aplayer-info {
+  background-color: #fff;
+}
+.aplayer .aplayer-list ol {
+  background-color: #fff;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
