@@ -103,7 +103,7 @@
 
 
 
-  <meta name="keywords" content="奔跑, 刘虎森, 博客, 编程, JAVA, java">
+  <meta name="keywords" content="SQL的各种基本操作,MySQL的高级运算符,多表查询之左连接，右连接,">
 
 
 
@@ -116,16 +116,18 @@
 
 
 
-<meta name="description" content="这是新的开始">
-<meta property="og:type" content="website">
-<meta property="og:title" content="藏书阁">
-<meta property="og:url" content="https://liuhusen.com/tags/感悟/index.html">
+<meta name="description" content="选择：select * from table1 where Id=1(Id=1为条件语句，根据自己情况自定义） 插入：insert into table1(field1,field2) values(value1,value2) 删除：delete from table1 where 范围 更新：update table1 set field1=value1 where 范围 查找：select">
+<meta name="keywords" content="SQL的各种基本操作,MySQL的高级运算符,多表查询之左连接，右连接">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基本的sql语句以及高级运算符和 多表查询">
+<meta property="og:url" content="https://liuhusen.com/2016/07/20/基本的sql语句以及高级运算符和 多表查询/index.html">
 <meta property="og:site_name" content="藏书阁">
-<meta property="og:description" content="这是新的开始">
+<meta property="og:description" content="选择：select * from table1 where Id=1(Id=1为条件语句，根据自己情况自定义） 插入：insert into table1(field1,field2) values(value1,value2) 删除：delete from table1 where 范围 更新：update table1 set field1=value1 where 范围 查找：select">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-28T19:10:15.798Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="藏书阁">
-<meta name="twitter:description" content="这是新的开始">
+<meta name="twitter:title" content="基本的sql语句以及高级运算符和 多表查询">
+<meta name="twitter:description" content="选择：select * from table1 where Id=1(Id=1为条件语句，根据自己情况自定义） 插入：insert into table1(field1,field2) values(value1,value2) 删除：delete from table1 where 范围 更新：update table1 set field1=value1 where 范围 查找：select">
 
 
 
@@ -155,13 +157,13 @@
 
 
 
-  <link rel="canonical" href="https://liuhusen.com/tags/感悟/">
+  <link rel="canonical" href="https://liuhusen.com/2016/07/20/基本的sql语句以及高级运算符和 多表查询/">
 
 
 
 
 
-  <title>标签: 感悟 | 藏书阁</title>
+  <title>基本的sql语句以及高级运算符和 多表查询 | 藏书阁</title>
   
 
 
@@ -190,7 +192,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 <a href="https://github.com/liuhusen/liuhusen.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -356,52 +358,270 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>感悟<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liuhusen.com/2016/07/20/基本的sql语句以及高级运算符和 多表查询/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/person3.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="藏书阁">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/05/26/关于/" itemprop="url">
-              
-                <span itemprop="name">自学编程成功概率有多少可能</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">基本的sql语句以及高级运算符和 多表查询</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-05-26T19:57:47+08:00" content="2017-05-26">
-          05-26
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">创建日期：</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-07-20T19:57:47+08:00">
+                2016-07-20
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+             归类：
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">mysql</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+         
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                   <i class="fa fa-file-word-o"></i>
+                </span>
+                文章字数：
+                <span title="字数统计">
+                  496 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                阅读时间
+                <span title="阅读时长">
+                  2 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>选择：select * from table1 where Id=1(Id=1为条件语句，根据自己情况自定义）</p>
+<p>插入：insert into table1(field1,field2) values(value1,value2)</p>
+<p>删除：delete from table1 where 范围</p>
+<p>更新：update table1 set field1=value1 where 范围</p>
+<p>查找：select * from table1 where field1 like ’%value1%’ —like的语法很精妙，查资料!</p>
+<p>排序：select * from table1 order by field1,field2 [desc]</p>
+<p>总数：select count * as totalcount from table1</p>
+<p>求和：select sum(field1) as sumvalue from table1</p>
+<p>平均：select avg(field1) as avgvalue from table1</p>
+<p>最大：select max(field1) as maxvalue from table1</p>
+<p>最小：select min(field1) as minvalue from table1</p>
+<p>11、说明：几个高级查询运算词</p>
+<p>A： UNION 运算符</p>
+<p>UNION 运算符通过组合其他两个结果表(例如 TABLE1 和 TABLE2)并消去表中任何重复行而派生出一个结果表。当 ALL 随 UNION 一起使用时(即 UNION ALL)，不消除重复行。两种情况下，派生表的每一行不是来自 TABLE1 就是来自 TABLE2。</p>
+<p>B： EXCEPT 运算符</p>
+<p>EXCEPT 运算符通过包括所有在 TABLE1 中但不在 TABLE2 中的行并消除所有重复行而派生出一个结果表。当 ALL 随 EXCEPT 一起使用时 (EXCEPT ALL)，不消除重复行。</p>
+<p>C： INTERSECT 运算符</p>
+<p>INTERSECT 运算符通过只包括 TABLE1 和 TABLE2 中都有的行并消除所有重复行而派生出一个结果表。当 ALL 随 INTERSECT 一起使用时 (INTERSECT ALL)，不消除重复行。</p>
+<p>注：使用运算词的几个查询结果行必须是一致的。</p>
+<p>12、说明：使用外连接</p>
+<p>A、left outer join：</p>
+<p>左外连接(左连接)：结果集几包括连接表的匹配行，也包括左连接表的所有行。</p>
+<p>SQL: select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c</p>
+<p>B：right outer join:</p>
+<p>右外连接(右连接)：结果集既包括连接表的匹配连接行，也包括右连接表的所有行。</p>
+<p>C：full outer join：</p>
+<p>全外连接：不仅包括符号连接表的匹配行，还包括两个连接表中的所有记录。</p>
 
       
     </div>
+    
+    
+    
+	<div>
+		  
+			
+		  
+	</div>
+    
 
+    
+
+    
+	<div>
+	  
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+	  
+	</div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/SQL的各种基本操作/" rel="tag"># SQL的各种基本操作</a>
+          
+            <a href="/tags/MySQL的高级运算符/" rel="tag"># MySQL的高级运算符</a>
+          
+            <a href="/tags/多表查询之左连接，右连接/" rel="tag"># 多表查询之左连接，右连接</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/20/MySQL建库建表建索引建视图建主键/" rel="next" title="MySQL建库建表建索引建视图建主键">
+                <i class="fa fa-chevron-left"></i> MySQL建库建表建索引建视图建主键
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/26/关于/" rel="prev" title="自学编程成功概率有多少可能">
+                自学编程成功概率有多少可能 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -409,6 +629,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -736,6 +960,10 @@ show_date_time();
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

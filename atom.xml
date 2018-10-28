@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liuhusen.com/"/>
-  <updated>2018-10-25T06:25:05.356Z</updated>
+  <updated>2018-10-28T19:14:11.519Z</updated>
   <id>https://liuhusen.com/</id>
   
   <author>
@@ -17,33 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>关于编程</title>
-    <link href="https://liuhusen.com/2018/10/22/hello-world/"/>
-    <id>https://liuhusen.com/2018/10/22/hello-world/</id>
-    <published>2018-10-22T11:50:59.039Z</published>
-    <updated>2018-10-25T06:25:05.356Z</updated>
-    
-    <content type="html"><![CDATA[<p>关于编程，从最早接触的C++讲起。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;关于编程，从最早接触的C++讲起。&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>MySQL的表以及数据备份</title>
     <link href="https://liuhusen.com/2017/05/26/MySQL%E7%9A%84%E8%A1%A8%E4%BB%A5%E5%8F%8A%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/"/>
     <id>https://liuhusen.com/2017/05/26/MySQL的表以及数据备份/</id>
     <published>2017-05-26T11:57:47.000Z</published>
-    <updated>2018-10-25T18:03:45.999Z</updated>
+    <updated>2018-10-28T19:14:11.519Z</updated>
     
     <content type="html"><![CDATA[<p>   备份表方法：  此方法索引和increment值也会同步</p><pre><code>CREATE TABLE tb_cab_bak LIKE tb_cab; // 同步建表INSERT INTO tb_cab_bak SELECT * FROM tb_cab；// 同步数据</code></pre><p>   若只复制表中的部分内容的同时定义表中的字段信息：<br>                 CREATE TABLE tb_cab_bak<br>                  (<br>                  – 对copy的表中的ID进行主键约束<br>                 ID INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY<br>                   )<br>                 AS<br>                 ( SELECT ID,SNAME,SCORE FROM tb_cab_bak );</p>]]></content>
     
@@ -59,7 +37,7 @@ INSERT INTO tb_cab_bak SELECT * FROM tb_cab；
     
     </summary>
     
-      <category term="数据库" scheme="https://liuhusen.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="mysql" scheme="https://liuhusen.com/categories/mysql/"/>
     
     
       <category term="MySQL" scheme="https://liuhusen.com/tags/MySQL/"/>
@@ -73,7 +51,7 @@ INSERT INTO tb_cab_bak SELECT * FROM tb_cab；
     <link href="https://liuhusen.com/2017/05/26/MySQL%E7%9A%84%E8%A1%A8%E5%A2%9E%E5%88%A0%E5%AD%97%E6%AE%B5%E5%92%8C%E5%A2%9E%E5%88%A0%E7%B4%A2%E5%BC%95/"/>
     <id>https://liuhusen.com/2017/05/26/MySQL的表增删字段和增删索引/</id>
     <published>2017-05-26T11:57:47.000Z</published>
-    <updated>2018-10-25T18:26:26.266Z</updated>
+    <updated>2018-10-28T19:13:31.613Z</updated>
     
     <content type="html"><![CDATA[<pre><code>表添加字段： ALTER TABLE 表名 ADD COLUMN 表字段 varchar(50) DEFAULT NULL COMMENT &apos;字段描述&apos;;表删除字段： ALTER TABLE 表名 DROP COLUMN  表字段 ;字段建唯一索引：create index idx_province_id on 表名 (表字段 );                               上为索引                create index 字段的索引 on 表名 (表字段 );               删除字段的索引：alter table 表名 drop index idx_province_id ;                                        上为索引                alter table 表名 drop 字段的索引 ;</code></pre>]]></content>
     
@@ -88,7 +66,7 @@ INSERT INTO tb_cab_bak SELECT * FROM tb_cab；
     
     </summary>
     
-      <category term="数据库" scheme="https://liuhusen.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="mysql" scheme="https://liuhusen.com/categories/mysql/"/>
     
     
       <category term="MySQL" scheme="https://liuhusen.com/tags/MySQL/"/>
@@ -123,6 +101,95 @@ INSERT INTO tb_cab_bak SELECT * FROM tb_cab；
       <category term="编程" scheme="https://liuhusen.com/tags/%E7%BC%96%E7%A8%8B/"/>
     
       <category term="感悟" scheme="https://liuhusen.com/tags/%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基本的sql语句以及高级运算符和 多表查询</title>
+    <link href="https://liuhusen.com/2016/07/20/%E5%9F%BA%E6%9C%AC%E7%9A%84sql%E8%AF%AD%E5%8F%A5%E4%BB%A5%E5%8F%8A%E9%AB%98%E7%BA%A7%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%20%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2/"/>
+    <id>https://liuhusen.com/2016/07/20/基本的sql语句以及高级运算符和 多表查询/</id>
+    <published>2016-07-20T11:57:47.000Z</published>
+    <updated>2018-10-28T19:10:15.798Z</updated>
+    
+    <content type="html"><![CDATA[<p>选择：select * from table1 where Id=1(Id=1为条件语句，根据自己情况自定义）</p><p>插入：insert into table1(field1,field2) values(value1,value2)</p><p>删除：delete from table1 where 范围</p><p>更新：update table1 set field1=value1 where 范围</p><p>查找：select * from table1 where field1 like ’%value1%’ —like的语法很精妙，查资料!</p><p>排序：select * from table1 order by field1,field2 [desc]</p><p>总数：select count * as totalcount from table1</p><p>求和：select sum(field1) as sumvalue from table1</p><p>平均：select avg(field1) as avgvalue from table1</p><p>最大：select max(field1) as maxvalue from table1</p><p>最小：select min(field1) as minvalue from table1</p><p>11、说明：几个高级查询运算词</p><p>A： UNION 运算符</p><p>UNION 运算符通过组合其他两个结果表(例如 TABLE1 和 TABLE2)并消去表中任何重复行而派生出一个结果表。当 ALL 随 UNION 一起使用时(即 UNION ALL)，不消除重复行。两种情况下，派生表的每一行不是来自 TABLE1 就是来自 TABLE2。</p><p>B： EXCEPT 运算符</p><p>EXCEPT 运算符通过包括所有在 TABLE1 中但不在 TABLE2 中的行并消除所有重复行而派生出一个结果表。当 ALL 随 EXCEPT 一起使用时 (EXCEPT ALL)，不消除重复行。</p><p>C： INTERSECT 运算符</p><p>INTERSECT 运算符通过只包括 TABLE1 和 TABLE2 中都有的行并消除所有重复行而派生出一个结果表。当 ALL 随 INTERSECT 一起使用时 (INTERSECT ALL)，不消除重复行。</p><p>注：使用运算词的几个查询结果行必须是一致的。</p><p>12、说明：使用外连接</p><p>A、left outer join：</p><p>左外连接(左连接)：结果集几包括连接表的匹配行，也包括左连接表的所有行。</p><p>SQL: select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c</p><p>B：right outer join:</p><p>右外连接(右连接)：结果集既包括连接表的匹配连接行，也包括右连接表的所有行。</p><p>C：full outer join：</p><p>全外连接：不仅包括符号连接表的匹配行，还包括两个连接表中的所有记录。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;选择：select * from table1 where Id=1(Id=1为条件语句，根据自己情况自定义）&lt;/p&gt;
+&lt;p&gt;插入：insert into table1(field1,field2) values(value1,value2)&lt;/p&gt;
+&lt;p&gt;删除：delet
+      
+    
+    </summary>
+    
+      <category term="mysql" scheme="https://liuhusen.com/categories/mysql/"/>
+    
+    
+      <category term="SQL的各种基本操作" scheme="https://liuhusen.com/tags/SQL%E7%9A%84%E5%90%84%E7%A7%8D%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+    
+      <category term="MySQL的高级运算符" scheme="https://liuhusen.com/tags/MySQL%E7%9A%84%E9%AB%98%E7%BA%A7%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+    
+      <category term="多表查询之左连接，右连接" scheme="https://liuhusen.com/tags/%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E4%B9%8B%E5%B7%A6%E8%BF%9E%E6%8E%A5%EF%BC%8C%E5%8F%B3%E8%BF%9E%E6%8E%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL建库建表建索引建视图建主键</title>
+    <link href="https://liuhusen.com/2016/05/20/MySQL%E5%BB%BA%E5%BA%93%E5%BB%BA%E8%A1%A8%E5%BB%BA%E7%B4%A2%E5%BC%95%E5%BB%BA%E8%A7%86%E5%9B%BE%E5%BB%BA%E4%B8%BB%E9%94%AE/"/>
+    <id>https://liuhusen.com/2016/05/20/MySQL建库建表建索引建视图建主键/</id>
+    <published>2016-05-20T05:33:20.000Z</published>
+    <updated>2018-10-28T19:13:06.070Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、说明：创建数据库<br>CREATE DATABASE db1(db1代表数据库表，可自命名)<br>2、说明：删除数据库<br>drop database db1(db1代表数据库表，可自命名)<br>3、说明：备份sql server<br>— 创建 备份数据的 device<br>USE master<br>EXEC sp_addumpdevice ‘disk’, ‘testBack’, ‘c:\mssql7backup\MyNwind_1.dat’<br>— 开始 备份<br>BACKUP DATABASE pubs TO testBack<br>4、说明：创建新表<br>create table tb1(Id int not null primary key,name varchar,..)(tb1为数据表名，ID为字段，int为数据类型整型，not null为数据是否可为空，Primary Key为主键设置，其中not null,primary key为可选项，字段，数据类型自定义。）<br>根据已有的表创建新表：<br>A：create table tab_new like tab_old (使用旧表创建新表)<br>B：create table tab_new as select col1,col2… from tab_old definition only<br>5、说明：<br>删除新表：drop table tb1<br>6、说明：<br>添加主键：Alter table tabname add primary key(ID)(设置某字段为主键，ID可自由设置，主键数据不可重复）<br>说明：<br>删除主键：Alter table tabname drop primary key(ID)（删除某字段主键）<br>7、说明：<br>创建索引：create [unique] index idxname on tabname(col….)<br>删除索引：drop index idxname<br>注：索引是不可更改的，想更改必须删除重新建。<br>8、说明：<br>创建视图：create view viewname as select statement<br>删除视图：drop view viewname</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、说明：创建数据库&lt;br&gt;CREATE DATABASE db1(db1代表数据库表，可自命名)&lt;br&gt;2、说明：删除数据库&lt;br&gt;drop database db1(db1代表数据库表，可自命名)&lt;br&gt;3、说明：备份sql server&lt;br&gt;— 创建 备份数据的 d
+      
+    
+    </summary>
+    
+      <category term="mysql" scheme="https://liuhusen.com/categories/mysql/"/>
+    
+    
+      <category term="建库建表建索引建视图" scheme="https://liuhusen.com/tags/%E5%BB%BA%E5%BA%93%E5%BB%BA%E8%A1%A8%E5%BB%BA%E7%B4%A2%E5%BC%95%E5%BB%BA%E8%A7%86%E5%9B%BE/"/>
+    
+      <category term="备份数据库" scheme="https://liuhusen.com/tags/%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql进行大数据量查询的性能优化</title>
+    <link href="https://liuhusen.com/2016/03/26/Mysql%E8%BF%9B%E8%A1%8C%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%87%8F%E6%9F%A5%E8%AF%A2%E7%9A%84%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    <id>https://liuhusen.com/2016/03/26/Mysql进行大数据量查询的性能优化/</id>
+    <published>2016-03-26T10:50:43.000Z</published>
+    <updated>2018-10-28T18:34:10.274Z</updated>
+    
+    <content type="html"><![CDATA[<p>数据库设计方面：</p><p>1、对查询进行优化，应尽量避免全表扫描，首先应考虑在 where 及 order by 涉及的列上建立索引。</p><p>2、应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫描。<br>             如： select id from t where num is null<br>             可以在num上设置默认值0，确保表中num列没有null值，然后这样查询： select id from t where num=0</p><p>3、并不是所有索引对查询都有效，SQL是根据表中数据来进行查询优化的，当索引列有大量数据重复时,查询可能不会去利用索引，如一表中有字段sex，male、female几乎各一半，</p><pre><code>那么即使在sex上建了索引也对查询效率起不了作用。</code></pre><p>4、索引并不是越多越好，索引固然可以提高相应的 select 的效率，但同时也降低了 insert 及 update 的效率，因为 insert 或 update 时有可能会重建索引，所以怎样建索引需要慎重</p><pre><code>考虑，视具体情况而定。一个表的索引数最好不要超过6个，若太多则应考虑一些不常使用到的列上建的索引是否有必要。</code></pre><p>5、应尽可能的避免更新索引数据列，因为索引数据列的顺序就是表记录的物理存储顺序，一旦该列值改变将导致整个表记录的顺序的调整，会耗费相当大的资源。若应用系统需要频<br>  繁更新索引数据列，那么需要考虑是否应将该索引建为索引。</p><p>6、尽量使用数字型字段，若只含数值信息的字段尽量不要设计为字符型，这会降低查询和连接的性能，并会增加存储开销。这是因为引擎在处理查询和连接时会逐个比较字符串中每</p><pre><code>一个字符，而对于数字型而言只需要比较一次就够了。</code></pre><p>7、尽可能的使用 varchar/nvarchar 代替 char/nchar ，因为首先变长字段存储空间小，可以节省存储空间，其次对于查询来说，在一个相对较小的字段内搜索效率显然要高些。</p><p>8、避免频繁创建和删除临时表，以减少系统表资源的消耗。</p><p>9、临时表并不是不可使用，适当地使用它们可以使某些例程更有效，例如，当需要重复引用大型表或常用表中的某个数据集时。但是，对于一次性事件，最好使用导出表。</p><p>10、在新建临时表时，如果一次性插入数据量很大，那么可以使用 select into 代替 create table，避免造成大量 log ，以提高速度；如果数据量不大，为了缓和系统表的资源，应先                    create table，然后insert。</p><p>11、如果使用到了临时表，在存储过程的最后务必将所有的临时表显式删除，先 truncate table ，然后 drop table ，这样可以避免系统表的较长时间锁定。</p><p>SQL语句方面：</p><p>1、应尽量避免在 where 子句中使用!=或&lt;&gt;操作符，否则将引擎放弃使用索引而进行全表扫描。</p><p>2、应尽量避免在 where 子句中使用 or 来连接条件，否则将导致引擎放弃使用索引而进行全表扫描<br>             如： select id from t where num=10 or num=20<br>             可以这样查询： select id from t where num=10 union all select id from t where num=20</p><p>3、in 和 not in 也要慎用，否则会导致全表扫描。<br>             如： select id from t where num in(1,2,3)<br>             对于连续的数值，能用 between 就不要用 in 了： select id from t where num between 1 and 3</p><p>4、下面的查询也将导致全表扫描： select id from t where name like ‘%abc%’</p><p>5、如果在 where 子句中使用参数，也会导致全表扫描。因为SQL只有在运行时才会解析局部变量，但优化程序不能将访问计划的选择推迟到运行时；它必须在编译时进行选择。</p><pre><code>然而，如果在编译时建立访问计划，变量的值还是未知的，因而无法作为索引选择的输入项。        如下面语句将进行全表扫描： select id from t where num=@num         可以改为强制查询使用索引： select id from t with(index(索引名)) where num=@num</code></pre><p>6、应尽量避免在 where 子句中对字段进行表达式操作，这将导致引擎放弃使用索引而进行全表扫描。<br>             如： select id from t where num/2=100<br>             应改为: select id from t where num=100*2 </p><p>7、应尽量避免在where子句中对字段进行函数操作，这将导致引擎放弃使用索引而进行全表扫描。<br>             如： select id from t where substring(name,1,3)=’abc’   ——name以abc开头的id<br>                     select id from t where datediff(day,createdate,’2005-11-30′)=0  ——‘2005-11-30’生成的id<br>             应改为：<br>                     select id from t where name like ‘abc%’<br>                     select id from t where createdate&gt;=’2005-11-30′ and createdate&lt;’2005-12-1′ </p><p>8、不要在 where 子句中的“=”左边进行函数、算术运算或其他表达式运算，否则系统将可能无法正确使用索引。</p><p>9、不要写一些没有意义的查询，如需要生成一个空表结构： select col1,col2 into #t from t where 1=0 这类代码不会返回任何结果集，但是会消耗系统资源的，</p><pre><code>应改成这样： create table #t(„)</code></pre><p>10、很多时候用 exists 代替 in 是一个好的选择： select num from a where num in(select num from b) </p><pre><code>用下面的语句替换： select num from a where exists(select 1 from b where num=a.num) </code></pre><p>11、任何地方都不要使用 select <em> from t ，用具体的字段列表代替“</em>”，不要返回用不到的任何字段。</p><p>12、尽量避免使用游标，因为游标的效率较差，如果游标操作的数据超过1万行，那么就应该考虑改写。</p><p>13、尽量避免向客户端返回大数据量，若数据量过大，应该考虑相应需求是否合理。</p><p>14、尽量避免大事务操作，提高系统并发能力。</p><p>java方面：</p><p>1、尽可能的少造对象。</p><p>2、合理摆正系统设计的位置。大量数据操作，和少量数据操作一定是分开的。大量的数据操作，肯定不是ORM框架搞定的。</p><p>3、使用jDBC链接数据库操作数据。</p><p>4、控制好内存，让数据流起来，而不是全部读到内存再处理，而是边读取边处理。</p><p>5、合理利用内存，有的数据要缓存</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;数据库设计方面：&lt;/p&gt;
+&lt;p&gt;1、对查询进行优化，应尽量避免全表扫描，首先应考虑在 where 及 order by 涉及的列上建立索引。&lt;/p&gt;
+&lt;p&gt;2、应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫描。&lt;br&gt; 
+      
+    
+    </summary>
+    
+      <category term="mysql" scheme="https://liuhusen.com/categories/mysql/"/>
+    
+    
+      <category term="大数据量查询" scheme="https://liuhusen.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%87%8F%E6%9F%A5%E8%AF%A2/"/>
+    
+      <category term="查询优化" scheme="https://liuhusen.com/tags/%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96/"/>
+    
+      <category term="sql语句优化" scheme="https://liuhusen.com/tags/sql%E8%AF%AD%E5%8F%A5%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
