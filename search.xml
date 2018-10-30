@@ -76,11 +76,11 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[JAVA基础：this 和super 关键字的区别.md]]></title>
+    <title><![CDATA[this 和super 关键字的区别]]></title>
     <url>%2F2015%2F11%2F12%2FJAVA%E5%9F%BA%E7%A1%80%EF%BC%9Athis%20%E5%92%8Csuper%20%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
     <content type="text"><![CDATA[属性的区别：this访问本类中的属性，如果本类没有此属性则从父类中继续查找。super访问父类中的属性。 方法的区别：this访问本类中的方法，如果本类没有此方法则从父类中继续查找。super访问父类中的方法。 构造的区别：this调用本类构造，必须放在构造方法的首行。super调用父类构造，必须放在子类构造方法首行。 其他区别：this表示当前对象。super不能表示当前对象 1、this. 变量和super.变量 this.变量 调用的当前对象的变量； super.变量 直接调用的是父类中的变量。 2、this(参数)和super(参数)方法 this(参数) 调用（转发）的是当前类中的构造器； super(参数) 用于确认要使用父类中的哪一个构造器。 注意点： 1）在对拥有父类的子类进行初始化时，父类的构造方法也会执行，且优先于子类的构造函数执行；因为每一个子类的构造函数中的第一行都有一条默认的隐式语句super(); 2）this() 和super()都只能写在构造函数的第一行； 3）this() 和super() 不能存在于同一个构造函数中。第一，this()和super()都必须写在构造函数的第一行；第二，this()语句调用的是当前类的另一个构造函数而这个另一个构造函数中必然有一个父类的构造器，再使用super()又调用一次父类的构造器， 就相当于调用了两次父类的构造器，编译器不会通过； 4）this和super不能用于static修饰的变量，方法，代码块；因为this和super都是指的是对象（实例）。]]></content>
       <categories>
-        <category>mysql</category>
+        <category>JAVA基础</category>
       </categories>
       <tags>
         <tag>JAVA基础</tag>
