@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liuhusen.com/"/>
-  <updated>2018-10-25T06:24:46.244Z</updated>
+  <updated>2018-10-31T07:41:51.026Z</updated>
   <id>https://liuhusen.com/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>简单有效的页面防止重复提交的操作</title>
+    <link href="https://liuhusen.com/2017/06/08/%E7%AE%80%E5%8D%95%E6%9C%89%E6%95%88%E7%9A%84%E9%A1%B5%E9%9D%A2%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E6%8F%90%E4%BA%A4%E7%9A%84%E6%93%8D%E4%BD%9C/"/>
+    <id>https://liuhusen.com/2017/06/08/简单有效的页面防止重复提交的操作/</id>
+    <published>2017-06-08T05:01:30.000Z</published>
+    <updated>2018-10-31T07:41:51.026Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>操作如下：     var isSubmit = true; // 在js顶部定义全局变量    if(isSubmit){       save();    }else{       crossAPI.tips(&quot;请勿重复提交数据！&quot;,3000);       return false;    }    var save = function () {          isSubmit = false; // 进入方法后 isSubmit 置为 false，在后续的点击提交时，便不会执行save方法          。。。          。。。 // 此处为你自己的执行保存的方法          if( 保存成功 ){             关闭数据新增页面，并刷新查询页面的查询          }else{             // 保存失败，则页面提醒保存失败             isSubmit = true;  // isSubmit 置为 true ,用以再次提交当前数据使用          }    }</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;pre&gt;&lt;code&gt;操作如下： 
+
+    var isSubmit = true; // 在js顶部定义全局变量
+
+    if(isSubmit){
+       save();
+    }else{
+       crossAPI.tips(&amp;quot;请勿重复提交数据！
+      
+    
+    </summary>
+    
+      <category term="javascript" scheme="https://liuhusen.com/categories/javascript/"/>
+    
+    
+      <category term="javascript页面效果" scheme="https://liuhusen.com/tags/javascript%E9%A1%B5%E9%9D%A2%E6%95%88%E6%9E%9C/"/>
+    
+      <category term="防止重复提交" scheme="https://liuhusen.com/tags/%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E6%8F%90%E4%BA%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>自学编程成功概率有多少可能</title>

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[简单有效的页面防止重复提交的操作]]></title>
+    <url>%2F2017%2F06%2F08%2F%E7%AE%80%E5%8D%95%E6%9C%89%E6%95%88%E7%9A%84%E9%A1%B5%E9%9D%A2%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E6%8F%90%E4%BA%A4%E7%9A%84%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[操作如下： var isSubmit = true; // 在js顶部定义全局变量 if(isSubmit){ save(); }else{ crossAPI.tips(&quot;请勿重复提交数据！&quot;,3000); return false; } var save = function () { isSubmit = false; // 进入方法后 isSubmit 置为 false，在后续的点击提交时，便不会执行save方法 。。。 。。。 // 此处为你自己的执行保存的方法 if( 保存成功 ){ 关闭数据新增页面，并刷新查询页面的查询 }else{ // 保存失败，则页面提醒保存失败 isSubmit = true; // isSubmit 置为 true ,用以再次提交当前数据使用 } }]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>javascript页面效果</tag>
+        <tag>防止重复提交</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MySQL的表增删字段和增删索引]]></title>
     <url>%2F2017%2F05%2F26%2FMySQL%E7%9A%84%E8%A1%A8%E5%A2%9E%E5%88%A0%E5%AD%97%E6%AE%B5%E5%92%8C%E5%A2%9E%E5%88%A0%E7%B4%A2%E5%BC%95%2F</url>
     <content type="text"><![CDATA[表添加字段： ALTER TABLE 表名 ADD COLUMN 表字段 varchar(50) DEFAULT NULL COMMENT &apos;字段描述&apos;; 表删除字段： ALTER TABLE 表名 DROP COLUMN 表字段 ; 字段建唯一索引：create index idx_province_id on 表名 (表字段 ); 上为索引 create index 字段的索引 on 表名 (表字段 ); 删除字段的索引：alter table 表名 drop index idx_province_id ; 上为索引 alter table 表名 drop 字段的索引 ;]]></content>
