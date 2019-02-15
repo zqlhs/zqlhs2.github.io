@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>藏书阁</title>
+  <title>相守</title>
   <icon>https://www.gravatar.com/avatar/f891a51eb4e19375142db2543d2003e2</icon>
-  <subtitle>奔跑</subtitle>
+  <subtitle>刘先生与张小姐</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liuhusen.com/"/>
@@ -10,7 +10,7 @@
   <id>https://liuhusen.com/</id>
   
   <author>
-    <name>Mr.Liu</name>
+    <name>Mr.Liu And Mrs.Zhang</name>
     <email>I_striving@163.com</email>
   </author>
   
